@@ -35,7 +35,28 @@ def manage_marks():
         print("Highest marks : ",high)
         print("Lowest marks : ",low)
         print("Printing sorted list in descending order : ",sub_list.sort(reverse=True))
-        
+manage_marks()
+
+#Question 4)
+class Student :
+    def __init__(self,name,roll_no):
+        self.name=name
+        self.roll_no =roll_no
+    def add_mark(self,mark) :
+        self.marks_list= mark
+    def get_average(self):
+        sum=0
+        for i in range(len(marks_list)):
+            sum += self.marks_list[i]
+        avg = sum/5
+        return avg
+    def display_info(self):
+        print("Student name : ",self.name)
+        print("Roll no : ",self.roll_no)
+        print("Marks of five subjects : ",self.marks_list)
+        print("Average :  ",self.get_average())
+
+
 
 
     
