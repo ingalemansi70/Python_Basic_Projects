@@ -111,7 +111,21 @@ def student_database():
                 print("Roll number and age must be numbers.")
 
 
-
+        elif choice == 2:
+            try:
+                roll_no = int(input("Enter roll number to search: "))
+                student = students.get(roll_no)
+                
+                if student:
+                    print("\nRoll No:", roll_no)
+                    print("Name:", student['name'])
+                    print("Age:", student['age'])
+                    print("City:", student['city'])
+                else:
+                    print("Student not found.")
+                    
+            except ValueError:
+                print("Roll number must be a number.")
 
 
     
