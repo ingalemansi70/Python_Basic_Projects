@@ -126,6 +126,25 @@ def student_database():
                     
             except ValueError:
                 print("Roll number must be a number.")
+        elif choice == 3:
+            if not students:
+                print("No students in database.")
+            else:
+                print("\n--- All Students ---")
+                for roll_no, info in students.items():
+                    print("Roll:", roll_no, ", Name:", info['name'], ", Age:", info['age'], ", City:", info['city'])
+                    
+        elif choice == 4:
+            print("Exiting Student Database. Goodbye!")
+            break
+            
+        else:
+            print("Invalid choice! Please enter 1-4.")
+
+# Call the function to run it
+student_database()
+            
+        
 
 
     
