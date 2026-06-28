@@ -71,7 +71,18 @@ def main():
     stud.add_mark(marks_list)
     stud.get_average()
     stud.display_info()
+
+#Question 5)
+
+def student_database():
+    students = {}
     
+    while True:
+        print("\n--- Student Database Menu ---")
+        print("1. Add student")
+        print("2. Search student by roll number") 
+        print("3. Display all students")
+        print("4. Exit")
         
         
 
