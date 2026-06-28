@@ -143,8 +143,21 @@ def student_database():
 
 # Call the function to run it
 student_database()
-            
-        
+
+#Question 6)
+
+import random
+import math
+def unique_numbers_program():
+    unique_nums = set()
+    print("Enter 10 numbers : ")
+    for i in range(10):
+        try:
+            num = float(input("Enter number : ",str(i+1)+ " : "))
+            unique_nums.add(num)
+        except ValueError:
+        print("Invalid Input!please enter a number : ")            
+        continue
 
 
     
