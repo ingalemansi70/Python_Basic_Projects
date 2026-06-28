@@ -158,7 +158,16 @@ def unique_numbers_program():
         except ValueError:
             print("Invalid Input!please enter a number : ")            
             continue
-
+    numbers_tuple = tuple(unique_nums)
+    print("\nUnique numbers tuple:", numbers_tuple)
+    
+    if len(numbers_tuple) == 0:
+        print("No valid numbers entered.")
+        return
+        
+    if len(numbers_tuple) < 3:
+        print("Need at least 3 unique numbers to pick 3 random ones.")
+        return
 
     
 
