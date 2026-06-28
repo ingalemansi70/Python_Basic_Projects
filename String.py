@@ -55,6 +55,25 @@ class Student :
         print("Roll no : ",self.roll_no)
         print("Marks of five subjects : ",self.marks_list)
         print("Average :  ",self.get_average())
+def main():
+    name = input("Enter name : ")
+    roll_no = int(input("Enter roll_no : "))
+    try :
+        s1 = int(input("Enter marks of sub1 :"))
+        s2 = int(input("Enter marks of sub2 :"))
+        s3 = int(input("Enter marks of sub3 :"))
+        s4 = int(input("Enter marks of sub4 :"))
+        s5 = int(input("Enter marks of sub5 :"))
+    except ValueError:
+        print("Marks should be integer value !")
+    marks_list = [s1,s2,s3,s4,s5]
+    stud = Student("Mansi",54,)
+    stud.add_mark(marks_list)
+    stud.get_average()
+    stud.display_info()
+    
+        
+        
 
 
 
