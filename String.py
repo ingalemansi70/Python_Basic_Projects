@@ -84,7 +84,32 @@ def student_database():
         print("3. Display all students")
         print("4. Exit")
         
-        
+        try:
+            choice = int(input("Enter your choice 1-4: "))
+        except ValueError:
+            print("Invalid input! Please enter a number 1-4.")
+            continue
+        if choice == 1:
+            try:
+                roll_no = int(input("Enter roll number: "))
+                name = input("Enter name: ").strip()
+                age = int(input("Enter age: "))
+                city = input("Enter city: ").strip()
+                
+                if not name or not city:
+                    print("Name and city cannot be empty.")
+                    continue
+                    
+                if age <= 0:
+                    print("Age must be positive.")
+                    continue
+                
+                students.update({roll_no: {"name": name, "age": age, "city": city}})
+                print("Student", name, "added successfully.")
+                
+            except ValueError:
+                print("Roll number and age must be numbers.")
+
 
 
 
