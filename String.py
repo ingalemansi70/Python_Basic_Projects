@@ -31,7 +31,12 @@ def manage_marks():
         avg = (s1+s2+s3+s4+s5)/5
         high = max(sub_list)
         low = min(sub_list)
+        print("Average marks : ",avg)
+        print("Highest marks : ",high)
+        print("Lowest marks : ",low)
+        print("Printing sorted list in descending order : ",sub_list.sort(reverse=True))
         
+
 
     
 
