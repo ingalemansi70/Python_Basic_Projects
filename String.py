@@ -19,11 +19,24 @@ analyze_string(s)
 #Question 3)
 
 def manage_marks():
-    s1 = int(input("Enter the marks of sub1 : "))
-    s2 = int(input("Enter the marks of sub2 : "))
-    s3 = int(input("Enter the marks of sub3 : "))
-    s4 = int(input("Enter the marks of sub4 : "))
-    s5 = int(input("Enter the marks of sub5 : "))
+    try:
+        s1 = int(input("Enter the marks of sub1 : "))
+        s2 = int(input("Enter the marks of sub2 : "))
+        s3 = int(input("Enter the marks of sub3 : "))
+        s4 = int(input("Enter the marks of sub4 : "))
+        s5 = int(input("Enter the marks of sub5 : "))
+        sub_list = [s1,s2,s3,s4,s5]
+    except ValueError:
+        print("Enter a valid number !")
+        avg = (s1+s2+s3+s4+s5)/5
+        high = max(sub_list)
+        low = min(sub_list)
+        
+
+    
+
+
+
 
 
 
