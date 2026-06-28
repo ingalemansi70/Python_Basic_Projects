@@ -156,8 +156,8 @@ def unique_numbers_program():
             num = float(input("Enter number : ",str(i+1)+ " : "))
             unique_nums.add(num)
         except ValueError:
-        print("Invalid Input!please enter a number : ")            
-        continue
+            print("Invalid Input!please enter a number : ")            
+            continue
 
 
     
